@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components
+{
+    .box{
+        @apply text-6xl w-24 h-20 rounded-2xl text-center bg-slate-200
+        gap-x-10 border-black border-4 
+    }
+    .hbutton{
+        @apply w-52 h-14 bg-white text-black m-5 rounded-[35px] font-[inter] font-[700] leading-8 text-2xl cursor-pointer hover:w-56 hover:h-16
+    }
+    .box2{
+        @apply  text-6xl w-24 h-20 rounded-2xl text-center bg-slate-200
+        gap-x-10 border-black border-4  animate-borderanimate
+    }
+    .box3{
+        @apply text-6xl w-24 h-20 rounded-2xl text-center bg-slate-200
+        gap-x-10 animate-flip 
+    }
+    .box4{
+        @apply  text-6xl w-24 h-20 rounded-2xl text-center bg-slate-200
+        gap-x-10 border-black border-4 
+    }
+    .game{
+        @apply opacity-0 gap-y-6 grid grid-cols-3 gap-x-4 -z-10 transition-opacity duration-[3s] ease-out
+    }
+    .game2{
+        @apply opacity-0 gap-y-6 grid  transition-[display] duration-[2s] ease-out 
+    }
+    .drawit{
+        @apply w-[50vw] h-[100vh] bg-black 
+    }
+    .dwbutton{
+        @apply w-52 h-14 bg-white text-black m-5 rounded-[10px] font-[inter] font-[700] leading-8 text-2xl border-4 border-green-500 flex justify-center items-center absolute left-[40%] top-[60%] opacity-0 animate-borderanimate
+    }
+    .rebutton{
+        @apply -z-10 w-52 h-14 bg-white text-black m-5 font-[inter] font-[700] leading-8 text-2xl rounded-[35px] flex justify-center items-center absolute left-[50%] top-[75%] opacity-0 cursor-pointer hover:w-56 hover:h-16
+    }
+}

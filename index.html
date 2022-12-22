@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- main class -->
+    <div class="main w-screen h-screen  flex bg-cover  justify-center items-center bg-[url('tttimg/demonback.jpg')]" id="main">
+        <!-- heading sword vs shield -->
+        <div class="heading transition-opacity duration-[4s] ease-in w-screen h-28 my-16 top-32  flex absolute  justify-center " id="head">
+            <div class="sword h-full w-36"><img src="tttimg/crossed_swords.png" alt=""></div>
+            <div class="vs h-full w-36"><h1><img src="tttimg/vs2.png" alt=""></h1></div>
+            <div class="sheild h-full w-36"><img src="tttimg/sheild2.png" alt=""></div>
+        </div>
+        <div class="playexit flex flex-col absolute bottom-20 transition-opacity duration-[4s] ease-in-out" id="playex">
+            <button class="hbutton" id="change">PLAY</button>
+            <button class="hbutton" id="themee">Background</button>
+        </div>
+        <!-- game started -->
+        <div class="boy w-0 h-0 transition-[width] duration-[3s] ease-in-out" id="boyimg"><div class="boyimg"><img src="tttimg/mainboy.png" alt="" id="bimg"></div></div>
+        <div class="game container bg-cover bg-[url('tttimg/wood.png')]" id="gridbox">
+            <button class=" b justify-center"><div class="box"></div></button>
+            <button class=" b justify-center"><div class="box"></div></button>
+            <button class=" b justify-center"><div class="box"></div></button>
+            <button class=" b justify-center"><div class="box"></div></button>
+            <button class=" b justify-center"><div class="box"></div></button>
+            <button class=" b justify-center"><div class="box"></div></button>
+            <button class=" b justify-center"><div class="box"></div></button>
+            <button class=" b justify-center"><div class="box"></div></button>
+            <button class=" b justify-center"><div class="box"></div></button>
+            
+        </div>
+        <div class="girl h-0 w-0 transition-[width] duration-[3s] ease-in-out" id="girlimg"><div class="girlimg"><img id="gimg" src="tttimg/fullshinobu1.png" alt=""></div></div>
+        <div id="result" class="w-16 h-16 rounded-3xl text-red-400 bg-slate-50 text-3xl absolute left-1/3 top-2/5 opacity-0 -z-10 ">
+            <img src="tttimg/dance.gif" alt="skdngi">
+        </div>
+        <!-- after win or draw-->
+        <div class="drawiit opacity-0 flex items-center" id="drawimg">
+                <div class="img1 absolute top-[30%] left-[40%] w-36 h-28">
+                    <img src="tttimg/crossed_swords.png" alt="">
+                </div>
+                <div class="img2 absolute left-[50%] top-[30%] w-36 h-28">
+                    <img src="tttimg/sheild2.png" alt="">
+                </div>
+        </div>
+        <div class="dwbutton" id="drawtext">
+                <h1>Draw!!</h1>
+        </div>
+        <div class="dwbutton" id="win">
+            <h1>
+                Winner!!
+            </h1>
+        </div>
+        <button class="rebutton left-[30%]" id="restartm">
+            <h1>Restart</h1>
+            
+        </button>
+        <button class="rebutton" id="exit" > 
+            <a href="index.html"><h1>
+                Exit
+            </h1></a>
+        </button>
+        
+        <button class="w-8 h-8 rounded-[50%] flex absolute left-3 bottom-4 justify-center items-center " id="music"><img class="object-contain" id="mimg" src="tttimg/sound.png" alt=""></button>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
